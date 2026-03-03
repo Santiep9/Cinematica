@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ParticlesController : MonoBehaviour
 {
@@ -21,11 +22,21 @@ public class ParticlesController : MonoBehaviour
 
     void CreateParticleExplotion()
     {
-
+        Debug.Log("Hola");
     }
 
     void UpdateParticlePosition(Particle p, float time)
     {
 
+    }
+
+    public void OnPress(InputAction.CallbackContext context)
+    {
+        CreateParticleExplotion();
+
+        for (int i = 0; i < systemParticlesNumber; i++)
+        {
+            
+        }
     }
 }
