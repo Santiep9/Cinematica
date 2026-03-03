@@ -16,7 +16,7 @@ public class ParticlesController : MonoBehaviour
 
     private void Start()
     {
-        
+
     }
 
     void CreateParticleExplotion()
